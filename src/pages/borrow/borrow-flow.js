@@ -17,7 +17,7 @@ import {
     CellBody,
     CellFooter,
 } from 'react-weui';
-import appMsgIcon from '../images/icon_nav_msg.png';
+import appMsgIcon from '../../images/icon_nav_msg.png';
 
 const CellMore = () => (
     <Cell access link>

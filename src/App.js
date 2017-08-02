@@ -9,9 +9,12 @@ import './App.css';
 import First from './pages/first'
 import Search from './pages/search'
 import Tab from './pages/tab'
-import BorrowFlow from './pages/borrow-flow'
-import Borrow from './pages/borrow'
-import Serial from './pages/serial'
+
+import BorrowFlow from './pages/borrow/borrow-flow'
+import Borrow from './pages/borrow/borrow'
+import Serial from './pages/borrow/serial'
+import ReturnFlow from './pages/return/return-flow'
+import Return from './pages/return/return'
 
 import Main from './containers/main'
 import Todos from './containers/todos'
@@ -24,7 +27,8 @@ const App = () => (
       <Route exact path="/search" component={Search}/>
       <Route exact path="/borrow_flow" component={BorrowFlow}/>
       <Route exact path="/borrow" component={Borrow}/>
-      <Route exact path="/return" component={Tab}/>
+      <Route exact path="/return_flow" component={ReturnFlow}/>
+      <Route exact path="/return" component={Return}/>
       <Route exact path="/serial" component={Serial}/>
       <Route exact path="/tab" component={Tab}/>
       <Route path="/me" component={Main}/>

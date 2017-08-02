@@ -11,7 +11,7 @@ export default class FirstPage extends React.Component {
                 <Link to="/borrow_flow">
                   <Button type="default" size="small">借</Button>
                 </Link>
-                <Link to="/return">
+                <Link to="/return_flow">
                   <Button type="default" size="small">还</Button>
                 </Link>
               </ButtonArea>
