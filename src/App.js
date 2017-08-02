@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route,
 } from 'react-router-dom'
 
@@ -15,6 +15,8 @@ import Borrow from './pages/borrow/borrow'
 import Serial from './pages/borrow/serial'
 import ReturnFlow from './pages/return/return-flow'
 import Return from './pages/return/return'
+
+import Scan from './containers/scan'
 
 import Main from './containers/main'
 import Todos from './containers/todos'
@@ -31,6 +33,7 @@ const App = () => (
       <Route exact path="/return" component={Return}/>
       <Route exact path="/serial" component={Serial}/>
       <Route exact path="/tab" component={Tab}/>
+      <Route path="/scan" component={Scan}/>
       <Route path="/me" component={Main}/>
       <Route path="/todos" component={Todos}/>
       <Route path="/detail/:id" component={Detail}/>

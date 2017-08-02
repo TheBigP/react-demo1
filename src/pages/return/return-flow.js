@@ -14,8 +14,11 @@ export default class ReturnFlow extends React.Component {
         return (
             <div>
               请扫描绘本上的条形码
-              <Link to="/return">
+              <Link to="/scan">
                 <Button size="small">扫描</Button>
+              </Link>
+              <Link to="/return">
+                <Button size="small">归还</Button>
               </Link>
             </div>
         );

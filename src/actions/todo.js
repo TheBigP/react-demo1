@@ -1,9 +1,9 @@
 import { CALL_API } from '../middleware/api';
 import * as ACTION from '../constants/todo';
 
-  const headers = new Headers({
-    "Content-Type": "application/json",
-  });
+const headers = new Headers({
+  "Content-Type": "application/json",
+});
 
 export const addTodo = (text) => {
   return {
