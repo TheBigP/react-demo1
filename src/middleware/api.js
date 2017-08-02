@@ -1,4 +1,4 @@
-
+// middleware： 简化fetch处理， 并且加上token
 function callApi(endpoint, init) {
 
   let token = localStorage.getItem('access_token') || null

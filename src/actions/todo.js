@@ -14,7 +14,11 @@ export const addTodo = (text) => {
         body: JSON.stringify({text}),
         headers,
       },
-      types: [ ACTION.ADD_TODO_REQUEST, ACTION.ADD_TODO_SUCCESS, ACTION.ADD_TODO_FAILURE ],
+      types: [
+        ACTION.ADD_TODO_REQUEST,
+        ACTION.ADD_TODO_SUCCESS,
+        ACTION.ADD_TODO_FAILURE
+      ],
     }
   };
 };
@@ -26,7 +30,11 @@ export const deleteTodo = (id) => {
         method: 'DELETE',
         headers,
       },
-      types: [ ACTION.DELETE_TODO_REQUEST, ACTION.DELETE_TODO_SUCCESS, ACTION.DELETE_TODO_FAILURE ],
+      types: [
+        ACTION.DELETE_TODO_REQUEST,
+        ACTION.DELETE_TODO_SUCCESS,
+        ACTION.DELETE_TODO_FAILURE
+      ],
     }
   };
 };
@@ -39,7 +47,11 @@ export const editTodo = (todo) => {
         headers,
         body: JSON.stringify(todo)
       },
-      types: [ ACTION.EDIT_TODO_REQUEST, ACTION.EDIT_TODO_SUCCESS, ACTION.EDIT_TODO_FAILURE ],
+      types: [
+        ACTION.EDIT_TODO_REQUEST,
+        ACTION.EDIT_TODO_SUCCESS,
+        ACTION.EDIT_TODO_FAILURE
+      ],
     }
   };
 };
@@ -56,7 +68,11 @@ export const completeAll = () => {
         method: 'POST',
         headers,
       },
-      types: [ ACTION.COMPLETE_ALL_REQUEST, ACTION.COMPLETE_ALL_SUCCESS, ACTION.COMPLETE_ALL_FAILURE ],
+      types: [
+        ACTION.COMPLETE_ALL_REQUEST,
+        ACTION.COMPLETE_ALL_SUCCESS,
+        ACTION.COMPLETE_ALL_FAILURE
+      ],
     }
   };
 };
@@ -68,7 +84,11 @@ export const clearCompleted = () => {
         method: 'POST',
         headers,
       },
-      types: [ ACTION.CLEAR_COMPLETED_REQUEST, ACTION.CLEAR_COMPLETED_SUCCESS, ACTION.CLEAR_COMPLETED_FAILURE ],
+      types: [
+        ACTION.CLEAR_COMPLETED_REQUEST,
+        ACTION.CLEAR_COMPLETED_SUCCESS,
+        ACTION.CLEAR_COMPLETED_FAILURE
+      ],
     }
   };
 };
@@ -82,7 +102,11 @@ export const fetchTodos = () => {
         method: 'GET',
         headers,
       },
-      types: [ ACTION.TODO_REQUEST, ACTION.TODO_SUCCESS, ACTION.TODO_FAILURE ],
+      types: [
+        ACTION.TODO_REQUEST,
+        ACTION.TODO_SUCCESS,
+        ACTION.TODO_FAILURE
+      ],
     }
   };
 };
