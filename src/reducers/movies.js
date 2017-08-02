@@ -17,7 +17,7 @@ const movies = (state = {
     return {
       ...state,
       isFetching: false,
-      list: action.movies,
+      list: action.response.data.children.map(child => child.data),
     }
   case MOVIE_FAILURE:
     return {

@@ -30,7 +30,7 @@ const todos = (state = initialState, action) => {
             return {
                 ...state,
                 isFetching: false,
-                list: action.todos,
+                list: action.response,
             };
         case ACTION.TODO_FAILURE:
         case ACTION.ADD_TODO_FAILURE:
